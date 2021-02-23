@@ -1,0 +1,198 @@
+header {
+    background-image: url(../imgs/agency.jpg);
+    background-size: cover;
+}
+
+
+
+.overlay {
+    background-color: rgba(0, 0, 0, .51);
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+h2 span, h1 span {
+    color: #bd8cbf;
+}
+
+li {
+    list-style-type: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a, button {
+    transition: all .5s ease;
+}
+
+button {
+    padding: 0
+}
+
+body {
+    font-size: 1.1rem;
+}
+
+/* navbar */
+
+nav.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    width: 100%;
+    z-index: 1000;
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav.navbar a, nav.navbar ul li a {
+    color: #FFF !important;
+}
+
+nav.navbar ul li {
+    padding: 0 15px;
+}
+
+nav.navbar .search-container {
+    position: relative;
+}
+
+nav.navbar form {
+    padding: 5px;
+    background-color: white;
+    position: absolute;
+    width: 260px;
+    display: none;
+}
+
+nav.navbar form input {
+    padding: 5px 10px;
+    border: 1px solid #b7b5b5;
+    background-color: #e6e3e3;
+    width: 100%;
+}
+
+/* header */
+
+header {
+    position: relative;
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+}
+
+header .container {
+    height: 100%
+}
+
+header .container > div {
+    margin: 0 auto;
+    position: relative;
+/*    text-align: center;*/
+}
+
+header .container > div h1 {
+    font-size: 90px;
+}
+.message {
+    font-size: 20px;
+}
+#date {
+    font-size: 30px;
+}
+header button {
+    background-color: transparent;
+    display: block;
+    border: 1px solid #FFF;
+    border-radius: 50px;
+    padding: 0;
+    margin: 30px auto;
+}
+
+header button a {
+    padding: 10px 40px;
+    display: block;
+    color: #FFF;
+}
+
+header button:hover {
+    background-color: #bd8cbf;
+    border: 1px solid #bd8cbf;
+}
+
+header button:hover a {
+    color: white;
+}
+
+
+
+
+
+
+/* media queries */
+
+@media (max-width: 1200px) {
+    
+   
+    
+    /* header */
+    
+    header h1 {
+        font-size: 50px !important;
+    } 
+    
+    /* navbar */
+    
+    .navbar ul {
+        background-color: rgba(189, 140, 191, .85);
+    }
+    .navbar ul li {
+        margin: 10px 0;
+    }
+    nav.navbar form {
+        width: 100%;
+        position: static;
+    }
+    
+    
+    
+   
+    
+    
+@media (max-width: 768px) {
+    
+    /* header */
+    
+    header h1 {
+        font-size: 50px !important;
+    } 
+   
+    }
+    
+    /* about */
+    
+    .about-us .row > .col-lg-6:first-of-type {
+        display: none;
+    }
+    
+    /* services */
+    
+    .services .slide {
+        width: 90%
+    }
+    .services .carousel-control-next, .services .carousel-control-prev {
+        display: none;
+    }
+    
+    /* agency */
+    
+    .agency .container > div {
+        width: 87%;
+    }
+    
+    
+}

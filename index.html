@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Go Tours</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/fontawesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+    </head>
+    <body>
+        
+        <nav class="navbar navbar-expand-lg navbar-light text-capitalize">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="imgs/logo.png" alt="#" /></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#show-menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="show-menu">
+                    <ul class="navbar-nav ml-auto">
+                        
+                        
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="far fa-user"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="far fa-heart"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <header id="home">
+            <div class="overlay">
+                <div class="container">
+                    <div>
+                        <h1><span>Amazing</span><br>Maldives, 10 jours de rêve...</h1>
+                        <div class="message">
+                           <p>Les Maldives, une destination qui fait rêver ! Go Tours n'a pas choisi de vous proposer son voyages aux Maldives par hasard ! Longues plages de sable blanc, lagon bleu turquoise, c'est la destination idéale pour un voyage de noces des plus romantiques...  </p>
+                           <p id="date">Rendez-vous Le 15 Février 2021</p>
+                        </div>
+                        <button><a href="https://atlasvoyages.com/agences" class="text-uppercase" target="_blank">Réserver maintenent</a></button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+            $(function () {
+                
+                'use strict';
+                
+                var winH = $(window).height();
+                
+                $('header').height(winH);  
+                
+                $('header .container > div').css('top', (winH / 2) - ( $('header .container > div').height() / 2));
+                
+                $('.navbar ul li a.search').on('click', function (e) {
+                    e.preventDefault();
+                });
+                $('.navbar a.search').on('click', function () {
+                    $('.navbar form').fadeToggle();
+                });
+                
+                $('.navbar ul.navbar-nav li a').on('click', function (e) {
+                    
+                    var getAttr = $(this).attr('href');
+                    
+                    e.preventDefault();
+                    $('html').animate({scrollTop: $(getAttr).offset().top}, 1000);
+                });
+            })
+        </script>
+    </body>
+</html>
