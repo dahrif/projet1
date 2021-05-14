@@ -12,8 +12,6 @@ header {
 }
 
 
-
-
 h2 span, h1 span {
     color: #bd8cbf;
 }
@@ -173,26 +171,3 @@ header button:hover a {
    
     }
     
-    /* about */
-    
-    .about-us .row > .col-lg-6:first-of-type {
-        display: none;
-    }
-    
-    /* services */
-    
-    .services .slide {
-        width: 90%
-    }
-    .services .carousel-control-next, .services .carousel-control-prev {
-        display: none;
-    }
-    
-    /* agency */
-    
-    .agency .container > div {
-        width: 87%;
-    }
-    
-    
-}
