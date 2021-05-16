@@ -127,6 +127,7 @@ header .contact:hover{
 .content ul{
     display: flex;
     position: absolute;
+    left: 110px;
     bottom: 70px;
     
 }
