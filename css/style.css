@@ -12,10 +12,6 @@ section{
     align-items: center;
     min-height: 100vh;
     background: linear-gradient(#EDA0C1, #FFF0E9);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
     padding: 50px;
 }
 
